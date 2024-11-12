@@ -1,18 +1,20 @@
+package Phonebook_Package;
+
 import java.io.Serializable;
 
+// Class with parameters for persons
 public class Person implements Serializable {
 
     // Instance Variables
-    private long id;
     private String name;
     private int age;
-    private boolean presence;
+    private boolean status;
 
     // Constructor
-    public Person(String name, int age, boolean presence) {
+    public Person(String name, int age, boolean status) {
         this.name = name;
         this.age = age;
-        this.presence = presence;
+        this.status = status;
     }
 
     // get-/set Methods
@@ -24,8 +26,8 @@ public class Person implements Serializable {
         return age;
     }
 
-    public boolean getPresence() {
-        return presence;
+    public boolean getStatus() {
+        return status;
     }
 
     public void setName(String name) {
@@ -36,12 +38,12 @@ public class Person implements Serializable {
         this.age = age;
     }
 
-    public void setPresence(boolean presence) {
-        this.presence = presence;
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
-    // String-to-String Method
+    // String-to-String Method - returns the string itself
     public String toString() {
-        return this.name + this.age + this.presence;
+        return this.name + this.age + this.status;
     }
 }
