@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35256f88-730b-4281-8015-4dc503a01f31" name="Changes" comment="Upload Project Version 1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PersonTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PersonTableModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookView.java" afterDir="false" />
-    </list>
+    <list default="true" id="35256f88-730b-4281-8015-4dc503a01f31" name="Changes" comment="Upload Project Version 1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731427426023</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Upload Project Version 1">
+      <option name="closed" value="true" />
+      <created>1732182673971</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732182673971</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
