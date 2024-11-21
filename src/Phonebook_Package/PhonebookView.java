@@ -1,13 +1,12 @@
 package Phonebook_Package;
 
 import javax.swing.JFrame;
-import java.awt.BorderLayout;
+import java.awt.*;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JPanel;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -17,7 +16,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.Collections;
 import javax.swing.JLabel;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
@@ -27,16 +25,20 @@ import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
 
 public class PhonebookView extends JFrame {
-    private JTable table;
-    private ArrayList<PhonebookEntry> entries = new ArrayList<>();
-    private PhonebookTableModel phonebookTableModel;
-    private JMenuItem menuSaveItem;
-    private JMenuItem menuOpenItem;
-    private JMenuItem menuItemCW;
-    private JComboBox comboBox;
 
+    // Variables
+    private final JTable table;
+    private ArrayList<PhonebookEntry> entries = new ArrayList<>();
+    private final PhonebookTableModel phonebookTableModel;
+    private final JMenuItem menuSaveItem;
+    private final JMenuItem menuOpenItem;
+    private final JMenuItem menuItemCW;
+    private final JComboBox comboBox;
+
+    // Constructor
     public PhonebookView() {
 
+        // Frame Options
         setTitle("Phonebook_Package");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -46,6 +48,7 @@ public class PhonebookView extends JFrame {
         getContentPane().add(panel, BorderLayout.SOUTH);
         panel.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 5));
 
+        // Btn to sort entries
         JButton btnSortBy = new JButton("Sort by:");
         panel.add(btnSortBy);
         btnSortBy.addActionListener(new BtnSortListener());
@@ -54,26 +57,33 @@ public class PhonebookView extends JFrame {
         comboBox = new JComboBox(cbItems);
         panel.add(comboBox);
 
+        // Btn to add new entries
         JButton btnAdd = new JButton("Add");
         panel.add(btnAdd);
         btnAdd.addActionListener(new BtnAddListener());
 
+        // Btn to delete entries
         JButton btnDelete = new JButton("Delete");
         panel.add(btnDelete);
         btnDelete.addActionListener(new BtnDeleteListener());
 
+        // Btn to quit program
         JButton btnQuit = new JButton("Quit");
         panel.add(btnQuit);
         btnQuit.addActionListener(new BtnQuitListener());
 
+        // Panel header
         JPanel panel_1 = new JPanel();
         getContentPane().add(panel_1, BorderLayout.NORTH);
         panel_1.setLayout(new FlowLayout(FlowLayout.LEFT, 5, 5));
+        panel_1.setBackground(Color.ORANGE);
 
-        JLabel lblPhonebookByMir = new JLabel("PhoneBook by mir Private Mode");
-        lblPhonebookByMir.setHorizontalAlignment(SwingConstants.LEFT);
-        panel_1.add(lblPhonebookByMir);
+        // Label header
+        JLabel lblPhonebook = new JLabel("PhoneBook");
+        lblPhonebook.setHorizontalAlignment(SwingConstants.LEFT);
+        panel_1.add(lblPhonebook);
 
+        // Add scroll
         JScrollPane scrollPane = new JScrollPane();
         getContentPane().add(scrollPane, BorderLayout.CENTER);
 
@@ -81,6 +91,7 @@ public class PhonebookView extends JFrame {
         table = new JTable(phonebookTableModel);
         scrollPane.setViewportView(table);
 
+        // Top Menu
         JMenuBar menuBar = new JMenuBar();
         JMenu menuAbout = new JMenu("About");
         JMenu menuFile = new JMenu("File");
@@ -131,21 +142,22 @@ public class PhonebookView extends JFrame {
 
             switch (sort) {
                 case "Number":
-                    Collections.sort(entries, new PhonebookEntry.CompNumberAsc());
+                    entries.sort(new PhonebookEntry.CompNumberAsc());
                     phonebookTableModel.fireTableDataChanged();
                     break;
                 case "Name":
-                    Collections.sort(entries, new PhonebookEntry.CompNameAsc());
+                    entries.sort(new PhonebookEntry.CompNameAsc());
                     phonebookTableModel.fireTableDataChanged();
                     break;
                 case "isPrivate":
-                    Collections.sort(entries, new PhonebookEntry.CompIsPrivateAsc());
+                    entries.sort(new PhonebookEntry.CompIsPrivateAsc());
                     phonebookTableModel.fireTableDataChanged();
                     break;
             }
         }
     }
 
+    // Action Listener for Menu
     private class MenuItemListener implements ActionListener {
         public void actionPerformed(ActionEvent e) {
             if (e.getSource() == menuItemCW) {
@@ -162,6 +174,7 @@ public class PhonebookView extends JFrame {
         }
     }
 
+    /* Method to sava phonebook as a file */
     public void safeObj(ArrayList<PhonebookEntry> entries) {
 
         File file;
@@ -193,6 +206,7 @@ public class PhonebookView extends JFrame {
         }
     }
 
+    // Method to load saved phonebook files
     @SuppressWarnings("unchecked")
     public ArrayList<PhonebookEntry> loadObj() {
 

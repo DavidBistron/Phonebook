@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class PersonTableModel extends AbstractTableModel {
 
-    private ArrayList<Person> myList;
+    private final ArrayList<Person> myList;
 
     // Constructor
     public PersonTableModel(ArrayList<Person> myList) {
@@ -17,7 +17,7 @@ public class PersonTableModel extends AbstractTableModel {
         this.addTableModelListener(null);
     }
 
-    private String[] columnNames = {"Name", "Age", "Presence"};
+    private final String[] columnNames = {"Name", "Age", "Presence"};
 
     public String getColumnName(int col) {
         return columnNames[col];

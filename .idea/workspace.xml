@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35256f88-730b-4281-8015-4dc503a01f31" name="Changes" comment="Initial Commit - Start Project">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/MainStart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/PersonTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookAddEntryView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookTableModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookView.java" afterDir="false" />
+    <list default="true" id="35256f88-730b-4281-8015-4dc503a01f31" name="Changes" comment="Upload Project Version 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PersonTableModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PersonTableModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phonebook_Package/PhonebookView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,20 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.MainStart.executor": "Run",
-    "Application.PhonebookAddEntryView.executor": "Run",
-    "Application.PhonebookView.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "/Users/David/IdeaProjects/Phonebook/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainStart.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhonebookAddEntryView.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PhonebookView.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/David/IdeaProjects/Phonebook/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.MainStart">
     <configuration name="MainStart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Phonebook_Package.MainStart" />
@@ -115,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731412795206</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upload Project Version 1">
+      <option name="closed" value="true" />
+      <created>1731427426023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1731427426023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,7 +126,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -131,23 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit - Start Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit - Start Project" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Phonebook_Package/MainStart.java</url>
-          <line>5</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Phonebook_Package/MainStart.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Upload Project Version 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upload Project Version 1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Phonebook$MainStart.ic" NAME="MainStart Coverage Results" MODIFIED="1731422884594" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />

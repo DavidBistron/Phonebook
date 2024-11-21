@@ -4,7 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.Comparator;
 
-// Class for creating persons
+// Class for creating entries
 public class PhonebookEntry implements Serializable {
 
     // Variables
