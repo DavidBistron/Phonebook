@@ -6,7 +6,7 @@ This phone book allows you to add, delete, sort and mark entries as private or n
 
 <hr>
 
-<img width="460" alt="Phonebook" src="https://github.com/user-attachments/assets/57f2eff5-7f72-400a-be53-dcd09af7e79b"><br>
+<img width="461" alt="Phonebook" src="https://github.com/user-attachments/assets/95c433c2-fd0b-45e3-a975-236dcbc0816a"><br>
 *Start Screen*<br>
 
 <hr>
