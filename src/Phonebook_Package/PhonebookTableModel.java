@@ -21,12 +21,26 @@ public class PhonebookTableModel extends AbstractTableModel {
         return entries.size();
     }
 
-    //
+    /*
     public Object getValueAt(int row, int col) {
         return switch (col) {
             case 0 -> entries.get(row).isPrivate() ? entries.get(row).getNumber() : "Contact";
             case 1 -> entries.get(row).isPrivate() ? entries.get(row).getName() : "Contact";
             case 2 -> entries.get(row).isPrivate();
+            default -> null;
+        };
+    }
+    */
+
+    public Object getValueAt(int row, int col) {
+        PhonebookEntry entry = entries.get(row);
+        return switch (col) {
+            case 0 -> // Nummer
+                    entry.getNumber();
+            case 1 -> // Name
+                    entry.getName();
+            case 2 -> // isPrivate
+                    entry.isPrivate();
             default -> null;
         };
     }

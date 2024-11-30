@@ -23,6 +23,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
+import javax.swing.table.DefaultTableCellRenderer;
 
 public class PhonebookView extends JFrame {
 
@@ -44,6 +45,7 @@ public class PhonebookView extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(new BorderLayout(0, 0));
 
+        // Panel for Btn's
         JPanel panel = new JPanel();
         getContentPane().add(panel, BorderLayout.SOUTH);
         panel.setLayout(new FlowLayout(FlowLayout.RIGHT, 5, 5));
@@ -114,6 +116,7 @@ public class PhonebookView extends JFrame {
 
     public void setEntry(int number, String name, boolean isPrivate) {
         phonebookTableModel.setEntry(number, name, isPrivate);
+        phonebookTableModel.fireTableDataChanged();
     }
 
     private class BtnQuitListener implements ActionListener {
