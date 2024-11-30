@@ -1,12 +1,7 @@
 package Phonebook_Package;
 
-import javax.swing.JFrame;
+import javax.swing.*;
 import java.awt.*;
-import javax.swing.JScrollPane;
-import javax.swing.JTable;
-import javax.swing.JButton;
-import javax.swing.JFileChooser;
-import javax.swing.JPanel;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -16,14 +11,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
-import javax.swing.JOptionPane;
-import javax.swing.SwingConstants;
-import javax.swing.JComboBox;
-import javax.swing.table.DefaultTableCellRenderer;
 
 public class PhonebookView extends JFrame {
 
@@ -38,6 +25,13 @@ public class PhonebookView extends JFrame {
 
     // Constructor
     public PhonebookView() {
+
+        // Better look and feel of whole phonebook view
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+        } catch (UnsupportedLookAndFeelException | ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+            e.printStackTrace();
+        }
 
         // Frame Options
         setTitle("Phonebook_Package");
